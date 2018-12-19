@@ -1,0 +1,147 @@
+body
+{
+	margin: 20px;
+	padding: 0px;
+}
+
+.container
+{
+	width: 100%;
+	margin: auto;
+	border: solid white 2px;
+	background: #dcdcdc;
+}
+
+.main-img img 
+{
+	width: 100%;
+	height: 500px;
+	position: relative;
+	overflow: hidden;
+}
+
+.imgs img
+{
+	width: 100%;
+	height: 70px;
+}
+
+
+.imgs
+{
+	margin: 10px;
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	grid-gap: 1px;
+}
+
+#imgText
+{
+
+	color: #fff;
+	font-size: 12px;
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+	font-family: sans-serif, arial;
+}
+
+#imgTextOuter
+
+{
+	padding-top: 5px;
+	background-color: black;
+	/*
+    font-family: sans-serif, arial;
+	position: absolute;
+	z-index: 2000;
+	color: grey;
+	background-color: #DCDCDC;
+	top: 30px;
+	overflow: hidden;
+	text-overflow: clip;
+	*/
+	text-align: center;
+	height: 30px;
+	position: relative;
+	opacity: 0.8;
+}
+
+
+ 
+
+
+@keyframes fadeIn
+{
+	to {
+		opacity: 1;
+	}
+}
+
+.fade-in
+{
+	opacity: 0;
+	animation: fadeIn 0.7s ease-in 1 forwards;
+}
+
+
+@keyframes keyInLeft
+{
+	to {
+		opacity: 0.9;
+	}
+}
+
+.key-in-left
+{	opacity: 0;
+	animation: keyInLeft 0.7s ease-in 1 forwards;
+}
+
+
+
+
+@media screen and (min-width: 601px) and (max-width: 900px) 
+{ 
+    
+.main-img img 
+{
+	height: 350px;
+}
+
+.imgs img
+{
+	height: 90px;
+}
+
+.imgs
+{
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 1px;
+}
+
+
+
+}
+
+
+@media screen and (max-width: 600px) { 
+    
+.main-img img 
+{
+	height: 250px;
+}
+
+.imgs img
+{
+	height: 50px;
+}
+
+.imgs
+{
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 1px;
+}
+
+
+
+}
